@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="header">
+        <span class="icon">🎵</span>
+        <h3>Pitch Control</h3>
+    </div>
+
+    <button id="pitch-change-btn" value="false"> 
+        <span class="status-dot"></span>
+        Pitch change - off
+    </button>
+
+    <div id="transpose-controls" class="disabled-overlay">
+        <div class="form-group">
+            <label for="original-key">Original key:</label>
+            <input type="text" id="original-key" placeholder="e.g. C, D#, F">
+        </div>
+
+        <div class="form-group">
+            <label for="pitch-select">Transpose:</label>
+            <select id="pitch-select">
+                <option value="">Select transpose</option>
+            </select>
+        </div>
+    </div>
+    
+    <script src="popup.js"> </script>
+</body>
+</html>
